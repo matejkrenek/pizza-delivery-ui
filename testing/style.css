@@ -1,0 +1,87 @@
+/* Basic settings */
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #242423;
+    font-family: 'Patua One', sans-serif;
+    color: #E8EDDF;
+    width: 100%;
+    height: 100vh;
+    letter-spacing: 0.05em;
+
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #E8EDDF;
+}
+
+/* Styling the navbar */
+.navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    height: 15%;
+    margin: auto;
+}
+
+    .nav-list{
+        display: flex;
+    }
+
+        .nav-list a{
+            margin-right: 4em;
+            font-size: 1.5em;
+            padding-bottom: 0.1em;
+        }
+
+        .nav-list a.active{
+            border-bottom: 0.2em solid #F5CB5C;
+        }
+
+    .logo{
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .right{
+        font-size: 2em;
+    }
+
+        .right .account{
+
+        }
+
+        .right .shopping-cart{
+            position: relative;
+            margin-left: 1em;
+        }
+
+            .right .shopping-cart span{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 5%;
+                right: -40%;
+                font-size: 0.6em;
+                background-color: #F5CB5C;
+                color: #333533;
+                width: 1em;
+                height: 1em;
+                border-radius: 50%;
+                padding: 0.7em;
+            }
+
