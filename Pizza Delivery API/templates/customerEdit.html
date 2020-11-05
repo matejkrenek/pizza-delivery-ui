@@ -1,0 +1,49 @@
+<div class="headline">
+    <h1>Settings</h1>
+</div>
+<div class="underline"></div>
+<div class="text">
+    <p>Edit your account details</p>
+</div>
+
+
+<div class="formWrapper">
+    <form id="customerEdit" action="/api/customers" method="PUT">
+        <input type="hidden" name="_method" value="PUT"/>
+        <div class="formError"></div>
+        <div class="formSuccess">Your Changes Have Been Saved</div>
+        <input class="hiddenEmailInput"  type="hidden" name="email_address" />
+        <div class="formInput">
+            <label for="email_address">Email Address</label>
+            <input class="disabled displayEmailInput" type="email" name="displayEmail" disabled />
+        </div>
+
+        <div class="flexBox__formInputs">
+            <div class="formInput">
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" class="firstNameInput">
+            </div>
+            <div class="formInput">
+              <label for="last_name">Last Name</label>
+              <input type="text" name="last_name" class="lastNameInput">
+          </div>
+        </div>
+
+        <div class="flexBox__formInputs">
+            <div class="formInput">
+              <label for="street_address">Street Address</label>
+              <input type="text" name="street_address" class="streetAddressInput">
+            </div>
+    
+            <div class="formInput">
+                <label for="zip_code">Zip Code</label>
+                <input type="text" name="zip_code" class="zipCodeInput">
+            </div>
+        </div>
+
+        <div class="formInput button-container">
+            <button class="button" type="submit">Save Changes</button>
+        </div>
+ 
+    </form>
+</div>

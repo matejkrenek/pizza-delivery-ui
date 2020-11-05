@@ -1,0 +1,32 @@
+<div class="headline">
+    <h1>Login</h1>
+</div>
+<div class="underline"></div>
+<div class="text">
+    <p>To be able to make an order, you have to login</p>
+</div>
+
+<p class="link">Or you can <a href="/customer/create">create an acccount</a></p>
+
+
+<div class="formWrapper">
+    <form id="sessionCreate" action="/api/tokens" method="POST">
+      <div class="formError"></div>
+
+      <div class="formInput">
+        <label for="email_address">Email Address</label>
+        <input type="email" name="email_address">
+      </div>
+
+      <div class="formInput">
+        <label for="password">Password</label>
+        <input type="password" name="password">
+      </div>
+
+      <div class="formInput button-container">
+        <button class="button" type="submit">Login</button>
+      </div>
+ 
+    </form>
+</div>
+
